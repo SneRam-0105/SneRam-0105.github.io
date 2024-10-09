@@ -1,7 +1,7 @@
 # SneRam-0105.github.io
 
 The GitHub Pages
-Period 2 tasks
+Period 1 tasks
 
 -Pancake Task
 -Cars

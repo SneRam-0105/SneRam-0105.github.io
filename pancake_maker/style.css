@@ -1,0 +1,217 @@
+body {
+  font-family: "Sansita", sans-serif;
+  background-color: #fff8f0;
+  color: #5a4a42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  
+}
+
+/* Add this to your existing CSS */
+
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.image-container {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  /* margin-top: auto;
+  margin-bottom: auto; */
+}
+
+.image-container img {
+  width: 100%;
+  /* height: 100vh; */
+  object-fit: cover;
+ display: block;
+}
+
+.form-container {
+  flex: 1;
+  padding: 20px;
+  background: #ffffff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2{
+ 
+    text-align: left;
+    font-family: 'Segoe UI', sans-serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    font-weight: 600; /* Slightly bolder */
+    
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: medium;
+  color: black;
+}
+
+
+
+.CustomerDetails
+  input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s; 
+  }
+
+  .CustomerDetails input[type=text]:focus, 
+.CustomerDetails select:focus {
+    border-color: #d17b49; 
+    outline: none; 
+}
+
+
+  .price-banner {
+    position:absolute;
+    top: 20px;
+    right: 20px;
+    /* transform: translateX(-50%); */
+    background-color: #d17b49;
+    color: white;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem; 
+    box-shadow: 12px 12px 12px white;
+    /* Glowing effect */
+    animation: glow 1.5s infinite; 
+     ;
+  }
+ 
+  
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px rgba(209, 123, 73, 0.5);
+      transform: scale(1);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(209, 123, 73, 1);
+      transform: scale(1.05);
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(209, 123, 73, 0.5);
+      transform: scale(1);
+    }
+  }
+  
+  .customization-section p{
+    font-weight: bold;
+    color: black;
+  }
+
+/* The Modal background */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left:70%;
+  text-align: justify;
+  top: 60%;
+  width: 30%; 
+  height: 30%;
+  /* overflow: auto;  */
+  /* background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);  */
+}
+
+
+/* Modal Content */
+
+.modal-content{
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  color: black;
+  background: #e7874f;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+button{
+ 
+  background-color: #d17b49; /* Button background color */
+  color: white;
+  border: none; /* Remove border */
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s, transform 0.2s; 
+}
+
+button:hover {
+  background-color: #b95c3b; /* Darker shade for hover */
+  transform: translateY(-2px); /* Slightly lift the button */
+}
+
+.modal-content button
+  
+  {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    color:black;
+    margin-top: 10px;
+  }
+ 
+
+  @media (max-width: 600px) {
+    .price-banner {
+        width: 80px; /* Adjust the size for smaller screens */
+        height: 80px; /* Adjust the height for smaller screens */
+        font-size: 1.5rem; /* Smaller font size */
+        top: 10px; /* Move it closer to the top on smaller screens */
+        right: 10px; /* Move it closer to the right on smaller screens */
+    }
+   .container{
+    flex-direction: column;
+   }
+   .image-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    
+  }
+  .form-container{
+    height: 100%;
+    width: 95%;
+  }
+   
+}
+

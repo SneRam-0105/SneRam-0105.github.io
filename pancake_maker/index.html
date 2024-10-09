@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pancake Maker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img src="pancake.jpeg" alt="Delicious pancakes" />
+        <div class="price-banner"><span id="totalPrice">$5</span></div>
+      </div>
+      <div class="form-container">
+        <h2>Customize Your Pancake</h2>
+        <div class="customization-section">
+          <label for="type">Choose your pancake type:</label>
+          <select id="type">
+            <option value="5">Classic - $5</option>
+            <option value="6">Chocolate - $6</option>
+            <option value="7">Blueberry - $7</option>
+          </select>
+        </div>
+        <div class="customization-section">
+          <p>Select your toppings ($1 each):</p>
+          <div>
+            <input type="checkbox" id="nuts" value="1" />
+            <label for="nuts">Nuts</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="bananas" value="1" />
+            <label for="bananas">Bananas</label>
+          </div>
+          <div>
+            <input type="checkbox" id="syrup" value="1" />
+            <label for="syrup">Syrup</label>
+          </div>
+        </div>
+        <div class="customization-section">
+          <p>Add extras:</p>
+          <div>
+            <input type="checkbox" id="whippedCream" value="2" />
+            <label for="whippedCream">Whipped Cream - $2 </label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="iceCream" value="3" />
+            <label for="iceCream">Ice Cream - $3 </label>
+          </div>
+        </div>
+
+        <div class="CustomerDetails">
+          <label for="fname">Customer name:</label>
+          <input type="text" id="fname" name="fname" />
+        </div>
+        <div>
+          <label for="Delivery"
+            ><p><b>How would you like to Eat:</b></p></label
+          ><br />
+          <input
+            type="radio"
+            id="EatIN"
+            name="Delivery"
+            value="EatIN"
+            checked
+          />
+          <label for="Eat In">Eat In</label><br />
+          <input type="radio" id="Pick Up" name="Delivery" value="Pick Up" />
+          <label for="Pick Up">Pick Up</label><br />
+          <input type="radio" id="Delivery" name="Delivery" value="Delivery" />
+          <label for="Delivery">Delivery($5)</label><br />
+        </div>
+        <div class="price-display">
+          <h3>Total Price: <span id="totalPrice">$5</span></h3>
+        </div>
+        <button id="myBtn">See Order</button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Your Order Details!</p>
+            <p id="oderDetails"></p>
+            <span>Total Amount: </span>
+            <span id="totalPrice"></span> <br />
+            <button id="Confirmbutton">Confirm</button>
+            <button id="goBackBtn">Go Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
