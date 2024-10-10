@@ -1,0 +1,335 @@
+
+*
+{
+    font-size: medium;
+    font-family: "Roboto", sans-serif
+}
+
+body{
+    background: white;
+   
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+#testDiv {
+  margin: 0 auto;
+ justify-self: center;
+}
+h3{
+  text-align: center;
+}
+
+/* Apply transition to headings */
+h1, h2, h3 {
+    transition: color 0.3s ease;
+  }
+  
+  /* Change color on hover */
+  h1:hover, h2:hover, h3:hover {
+    color: #065f56;
+    font-weight: bold; /* A darker shade of your primary color */
+  }
+  
+  /* Define the blink animation */
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  /* Apply the animation to the discounted price */
+  .DiscountedPrice {
+    color: green;
+    font-weight: bold;
+    animation: blink 1s step-start ;
+  }
+  
+#searchinput{
+    font-size: larger;
+    margin-left: 5px;
+    
+   }
+  
+   #searchButton{
+    padding: 12px;
+    background-color: rgb(8,149,135);
+    color:white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+   margin: 10px 10px;
+    
+   }
+
+h3{
+    color: rgb(8,149,135);
+    font-size: large;
+}
+
+label{
+    display:inline;
+    margin-top: 5px;
+    color: rgb(8,149,135);;
+   
+}
+.Search th, td {  
+    border: 1px solid #ddd;  
+    padding: 8px;  
+    text-align: left;  
+    }  
+      
+    .Search th {  
+    background: rgb(8,149,135);  
+  
+    color: white;  
+    }  
+  
+
+#container{
+   
+    display: flex; 
+    flex-direction:row;
+    padding: 30px;
+    margin: 50px;
+}
+
+
+    form{
+    width: 300px;
+    margin: 20px auto;
+    margin-bottom: 30px;
+    padding-right : 50px;
+    /* padding-top : 20px; */
+    padding-left : 50px;
+    border-radius :10px;
+    background-color: white;
+    z-index: -1;
+
+   
+}
+
+/* Define the slide-in animation */
+@keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Apply the animation when the message is visible */
+  #message.success
+ {
+    /* Existing styles */
+    margin-top: 1rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    visibility: hidden;
+    transition: visibility 3s ease;
+  
+    /* New animation */
+    animation: slideIn 0.1s forwards;
+    background-color: rgb(8,149,135);
+    color: white;
+  }
+  #message.error 
+  {
+    margin-top: 1rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    visibility: hidden;
+    transition: visibility 3s ease;
+  
+    /* New animation */
+    animation: slideIn 0.1s forwards;
+    background-color: rgb(216, 75, 75);
+    color: white;
+  }
+  
+  /* Make the message visible to trigger the animation */
+  #message.success.visible,
+  #message.error.visible {
+    visibility: visible;
+  }
+  
+  #newdiv{
+    flex: 1;
+  }
+
+  #carForm label{
+    display:block;
+    margin-top: 5px;
+    width: 100%;
+
+
+}
+
+#carForm input{
+    display:block;
+    margin-top: 5px;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    border: 0;
+
+}
+h1{
+    text-align: center  ;
+    color: rgb(8,149,135);
+    font-size: large;
+
+}
+
+#carForm button{
+    padding: 12px;
+    background-color: rgb(8,149,135);
+    color:white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#delete{
+    
+        background-color: #04AA6D;
+        color: white;
+        margin: 4px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+      }
+      
+      #delete:hover {
+        opacity:1;
+      }
+
+/* Define the hover animation */
+@keyframes buttonHover {
+    to {
+      transform: scale(1.05);
+    }
+  }
+  
+  /* Apply the animation to the search button */
+  #searchButton:hover,
+  #carForm button:hover {
+    animation: buttonHover 0.3s forwards;
+  }
+
+  
+  
+  
+.DB {  
+   flex: 1;
+    border-collapse: collapse;  
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    /* padding: 100px; */
+  
+    
+    }  
+      
+    .DB th, td {  
+    /* border: 1px solid #a44a3f;   */
+    /* padding: 8px;  
+    text-align: left;   */
+
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    word-break: break-all;
+    }  
+      
+    .DB th {  
+    background-color: rgb(8,149,135);  
+    color: white;  
+    font-weight: bold;
+    
+    }  
+
+    h2{
+    text-align: center;
+    color: rgb(8,149,135);
+    font-size: large;
+   }
+
+   .OriginalPrice{
+    text-decoration: line-through;
+    color: red;
+   }
+
+.DiscountedPrice
+{
+    color: green;
+font-weight: bold;
+}
+
+
+@media (max-width: 800px) {
+    body {
+        padding: 10px; 
+    }
+
+    #container {
+        flex-direction: column;
+        padding: 10px; 
+        margin: 20px; 
+    }
+
+    #searchButton {
+        width: 20%;
+        margin-bottom: 20px; 
+    }
+
+    .DB, .Search {
+        width: 100%; 
+        overflow-x: auto; 
+        display: block; /* Make the table responsive */
+        border-collapse: collapse; 
+        
+    }
+    .DB, .Search {
+      max-width: 100%; /* Set a max-width for the table */
+  }
+  
+    table-container {
+      overflow-x: auto; /* Enable horizontal scrolling */
+      margin: 20px 0;   /* Add some spacing */
+  }
+    
+        /* Reduce animation duration on smaller screens */
+        #searchButton:hover,
+        #carForm button:hover {
+          animation-duration: 0.2s;
+        }
+      
+        /* Adjust the pulse effect */
+        #delete {
+          animation-duration: 1.5s;
+        }
+      
+      
+}
+   
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+
+    <title>Car Information</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="testDiv">
+        <h3>Search Car by License Plate number</h3>
+        <label for="license">License Number</label>
+        <input
+          placeholder="Enter some text"
+          id="searchinput"
+          name="searchinput"
+        />
+
+        <button onclick="searchcar()" id="searchButton">Search</button>
+        <div>
+          <div id="Search"></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="container">
+        <div id="newdiv">
+          <form id="carForm">
+            <h1>Add New car</h1>
+            <label for="licensePlate">License Plate: </label>
+            <input type="text" id="licensePlate" name="licensePlate" required />
+
+            <label for="maker">Maker: </label>
+            <input type="text" id="maker" name="maker" required />
+
+            <label for="model1">Model1: </label>
+            <input type="text" id="model1" name="model1" required />
+
+            <label for="currentOwner">CurrentOwner: </label>
+            <input type="text" id="currentOwner" name="currentOwner" required />
+
+            <label for="color">Color: </label>
+            <input type="text" id="color" name="color" required />
+
+            <label for="year">Year of Manufacture: </label>
+            <input type="text" id="year" name="year" />
+            <label for="price">Price: </label>
+            <input type="text" id="price" name="price" />
+
+            <!-- input type color can also be used -->
+            <button type="submit">Submit</button>
+            <button type="reset">Reset the form</button>
+          </form>
+        </div>
+        <div id="message"></div>
+
+        <div class="DB" id="DB">
+          <h2>Car Database</h2>
+          <div id="table-container">
+            <p>Car database is empty</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
