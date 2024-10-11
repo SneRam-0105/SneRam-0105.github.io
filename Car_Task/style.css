@@ -170,7 +170,8 @@ label{
   }
   
   #newdiv{
-    flex: 1;
+  
+    width: 40%;
   }
 
   #carForm label{
@@ -238,7 +239,8 @@ h1{
   
   
 .DB {  
-   flex: 1;
+  
+   width: 60%;
     border-collapse: collapse;  
     margin-top: 0;
     margin-bottom: 0;
@@ -249,12 +251,7 @@ h1{
   
     
     }  
-      
     .DB th, td {  
-    /* border: 1px solid #a44a3f;   */
-    /* padding: 8px;  
-    text-align: left;   */
-
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
@@ -293,8 +290,9 @@ font-weight: bold;
 
     #container {
         flex-direction: column;
-        padding: 10px; 
-        margin: 20px; 
+        padding: 10px 0; 
+       margin: 0;
+      
     }
 
     #searchButton {
@@ -317,7 +315,7 @@ font-weight: bold;
       overflow-x: auto; /* Enable horizontal scrolling */
       margin: 20px 0;   /* Add some spacing */
   }
-    
+   
         /* Reduce animation duration on smaller screens */
         #searchButton:hover,
         #carForm button:hover {
