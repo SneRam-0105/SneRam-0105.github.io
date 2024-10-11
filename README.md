@@ -3,6 +3,6 @@
 The GitHub Pages
 Period 1 tasks
 
--Pancake Task
--Cars
--Persons
+- Pancake Task
+- Cars
+- Persons
