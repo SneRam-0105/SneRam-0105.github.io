@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon1.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Header with Logo and Navigation -->
+    <header id="header">
+      <div class="logo">
+        <img src="Group 2.png" alt="Logo" class="logo-img" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About me</h2>
+        <p>
+          "I am a passionate full-stack developer currently studying to enhance
+          my skills. Although I am in the early stages of my journey, I am eager
+          to design engaging web pages and work on the front-end to build a
+          solid foundation in coding. My goal is to continuously improve my
+          skills and contribute to projects that challenge and expand my
+          knowledge in web development. I am particularly interested in
+          front-end development, where I enjoy crafting intuitive and
+          user-friendly interfaces. I have been exploring React, a powerful
+          JavaScript library, to create dynamic and responsive web applications.
+          By leveraging React's component-based structure, I aim to write clean,
+          reusable code that enhances development efficiency. My ultimate goal
+          is to combine creativity and technical expertise to build seamless
+          user experiences."
+        </p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="card-container">
+          <div class="Card">
+            <img src="BCH.png" alt="Projects" />
+            <div class="Cards">
+              <h3>BCH projects</h3>
+              <p>
+                The pancake task is an online food ordering website where you
+                can customize your pancakes...
+              </p>
+              <a id="bchReadMore" href="#projects">Read More</a>
+            </div>
+          </div>
+
+          <div class="Card">
+            <img src="Github.png" alt="Projects" />
+            <div class="Cards">
+              <h3>Git hub projects</h3>
+              <p>
+                List of github repositories created during my studies in
+                Business Colege Helsinki...
+              </p>
+              <a id="gitReadMore" href="#projects">Read more</a>
+            </div>
+          </div>
+
+          <div class="Card">
+            <img src="JS.png" alt="Projects" />
+            <div class="Cards">
+              <h3>Car project</h3>
+              <p>
+                Car task is a website to maintain a database of cars where we
+                can add, search or delete cars...
+              </p>
+              <a id="carReadMore" href="#projects">Read More</a>
+
+              <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <div id="modalBody"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="Card">
+            <img src="Html.png" alt="Projects" />
+            <div class="Cards">
+              <h3>Cat contacts project</h3>
+              <p>
+                In this task we created a webpage where we fetch user data from
+                the given API...
+              </p>
+              <a id="catReadMore" href="#projects">Read more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section with Progress Bars -->
+      <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+          <div class="skill">
+            <h3>HTML</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>CSS</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>React</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>Node.js</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 50%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>Mysql</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Contact Form -->
+
+    <footer id="contact">
+      <p>Contact Form</p>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+        &copy;My website
+      </form>
+      <button id="back-to-top">Back to Top</button>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
